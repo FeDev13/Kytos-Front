@@ -166,7 +166,7 @@ export const RegisterNewPatients = () => {
         {/* CONTAINER FORM REGISTER PATIENT PAGE */}
         <div className="w-full h-screen font-PTSans bg-logo absolute -mt-96 md:relative md:mt-0">
           {/* FORM SECTION */}
-          <div className="p-4 h-[calc(100%-64px) w-[70%] mx-auto rounded-md bg-white">
+          <div className="p-4 h-[calc(100%-64px) w-[90%] lg:w-[70%] mx-auto rounded-md bg-white">
             <h1 className="text-center w-3/4 m-auto px-4 font-PTSans font-bold text-3xl text-logo bg-white">
               Ingrese paciente nuevo{" "}
             </h1>

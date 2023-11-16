@@ -79,7 +79,7 @@ export const Register = () => {
           </p>
 
           <form
-            className="w-2/3 m-auto flex flex-col justify-center items-center gap-5 mt-8"
+            className="w-full xl:w-2/3 m-auto flex flex-col justify-center items-center gap-5 mt-8"
             onSubmit={handleSubmit}
           >
             <input
