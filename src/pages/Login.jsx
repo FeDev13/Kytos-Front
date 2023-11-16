@@ -41,7 +41,7 @@ export const Login = () => {
     setErrorMsgValidator("");
     try {
       const res = await axios.post(
-        "http://localhost:5055/auth/login",
+        "https://kytosarg.onrender.com/auth/login",
         loginValues
       );
       setCookies("access_token", res.data.token);

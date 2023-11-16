@@ -39,7 +39,10 @@ export const Register = () => {
     setErrorMsgBack("");
     setErrorMsgValidator("");
     try {
-      await axios.post("http://localhost:5055/auth/register", registerValues);
+      await axios.post(
+        "https://kytosarg.onrender.com/auth/register",
+        registerValues
+      );
       setLoadingAuth(false);
       navigate("/");
     } catch (error) {

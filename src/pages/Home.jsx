@@ -39,7 +39,7 @@ export const Home = () => {
   const getPatientsForThisProfessional = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5055/patients/homePatients?professionalID=${professionalID}`
+        `https://kytosarg.onrender.com/patients/homePatients?professionalID=${professionalID}`
       );
       setPatients(res.data);
     } catch (error) {
@@ -50,7 +50,7 @@ export const Home = () => {
   const getUrgentsPatientsIDs = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5055/patients/urgentPatientsIDs?professionalID=${professionalID}`
+        `https://kytosarg.onrender.com/patients/urgentPatientsIDs?professionalID=${professionalID}`
       );
       setUrgentPatientsIDs(res.data.urgentPatients);
     } catch (error) {
@@ -70,7 +70,7 @@ export const Home = () => {
   const savedUrgentPatient = async (patientID) => {
     try {
       const res = await axios.put(
-        "http://localhost:5055/patients/urgentPatients",
+        "https://kytosarg.onrender.com/patients/urgentPatients",
         {
           professionalID,
           patientID,
@@ -99,7 +99,7 @@ export const Home = () => {
     if (isDelete) {
       try {
         await axios.delete(
-          `http://localhost:5055/patients/deletePatient/${professionalID}/${patientID}`
+          `https://kytosarg.onrender.com/patients/deletePatient/${professionalID}/${patientID}`
         );
         await getPatientsForThisProfessional();
         toast.success("Deleted patient", {

@@ -20,7 +20,7 @@ export const RegisterNewPatients = () => {
   const getPatientById = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5055/patients/${professionalID}/${patientID}`
+        `https://kytosarg.onrender.com/patients/${professionalID}/${patientID}`
       );
 
       setNewPatient(res.data);
@@ -57,7 +57,7 @@ export const RegisterNewPatients = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5055/patients/registerPatient",
+        "https://kytosarg.onrender.com/patients/registerPatient",
         form,
         {
           headers: {
@@ -93,7 +93,7 @@ export const RegisterNewPatients = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:5055/patients/update/${professionalID}/${patientID}`,
+        `https://kytosarg.onrender.com/patients/update/${professionalID}/${patientID}`,
         newPatient
       );
       setLoadingRegisterPatient(false);
