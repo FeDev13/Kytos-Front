@@ -256,7 +256,7 @@ export const RegisterNewPatients = () => {
                 >
                   Sintomas:
                 </label>
-                <div className="w-full grid grid-cols-2 justify-center gap-1">
+                <div className="w-full grid grid-cols-2 justify-center gap-1 bg-white">
                   {newPatient.symptoms.map((el, index) => (
                     <input
                       className="w-full rounded-sm h-7 bg-transparent border border-solid border-tertiary outline-none px-3 py-1 font-PTSans text-terborder-tertiary  text-center"
