@@ -8,7 +8,7 @@ import { Topbar } from "../components/Topbar";
 import { MyContext } from "../context/PatientContext";
 import { Loader } from "../components/Loader";
 import { useCookies } from "react-cookie";
-import moment from "moment";
+import dayjs from "dayjs";
 
 export const RegisterNewPatients = () => {
   const professionalID = window.localStorage.getItem("professionalID");
@@ -369,7 +369,7 @@ export const RegisterNewPatients = () => {
                     {appointmentDate && (
                       <p className="font-PTSans font-bold text-logo text-lg  bg-white">
                         El proximo turno es :{" "}
-                        {moment(selectedDate).format("DD-MM-YYYY")}
+                        {dayjs(selectedDate).format("Do-MM-YYYY")}
                       </p>
                     )}
                   </div>
