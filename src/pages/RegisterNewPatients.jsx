@@ -369,7 +369,7 @@ export const RegisterNewPatients = () => {
                     {appointmentDate && (
                       <p className="font-PTSans font-bold text-logo text-lg  bg-white">
                         El proximo turno es :{" "}
-                        {dayjs(selectedDate).format("Do-MM-YYYY")}
+                        {dayjs(selectedDate).format("DD-MM-YYYY")}
                       </p>
                     )}
                   </div>
